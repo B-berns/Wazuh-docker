@@ -1,4 +1,6 @@
 ```
-curl https://raw.githubusercontent.com/B-berns/Wazuh-docker/refs/heads/main/Wazuh-docker && sudo chmod +x wazuh-docker.sh && sudo ./wazuh_docker.sh
+
+curl -O https://raw.githubusercontent.com/openai-code/wazuh-scripts/main/wazuh-docker.sh && sudo chmod +x wazuh-docker.sh && sudo ./wazuh-docker.sh
+
 
 ```
