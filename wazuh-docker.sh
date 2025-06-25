@@ -66,8 +66,8 @@ echo "🔐 Generating certificates..."
 docker compose -f generate-indexer-certs.yml run --rm generator
 
 # Start the stack
-echo "🚀 Starting Wazuh stack..."
-docker compose up -d
+echo "🚀 Start the wazuh..."
+echo "docker compose up -d"
 EOF
 
 # --- Step 6: Done ---
