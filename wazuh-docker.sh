@@ -61,16 +61,16 @@ EOF
 
 echo "✅ Wazuh setup complete!"
 echo "➡️ Log in as 'wazuh' or run: su - wazuh "
-ECHO " Move into single-node directory "
-ECHO
-ECHO
-ECHO "cd wazuh-docker/single-node"
+echo " Move into single-node directory "
+echo
+echo
+echo "cd wazuh-docker/single-node"
 
 # Generate certificates inside single-node
 echo "🔐 Generating certificates..."
-ECHO
-ECHO
-ECHO "docker compose -f generate-indexer-certs.yml run --rm generator"
+echo
+echo
+echo "docker compose -f generate-indexer-certs.yml run --rm generator"
 
 # Start the stack
 echo "🚀 Start the wazuh..."
