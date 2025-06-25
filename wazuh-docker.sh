@@ -57,19 +57,25 @@ set -e
 # Clone Wazuh repo
 echo "📥 Cloning Wazuh Docker repo..."
 git clone https://github.com/wazuh/wazuh-docker.git -b v4.12.0
+EOF
 
-# Move into single-node directory
-cd wazuh-docker/single-node
+echo "✅ Wazuh setup complete!"
+echo "➡️ Log in as 'wazuh' or run: su - wazuh "
+ECHO " Move into single-node directory "
+ECHO
+ECHO
+ECHO "cd wazuh-docker/single-node"
 
 # Generate certificates inside single-node
 echo "🔐 Generating certificates..."
-docker compose -f generate-indexer-certs.yml run --rm generator
+ECHO
+ECHO
+ECHO "docker compose -f generate-indexer-certs.yml run --rm generator"
 
 # Start the stack
 echo "🚀 Start the wazuh..."
 echo "docker compose up -d"
-EOF
+
 
 # --- Step 6: Done ---
-echo "✅ Wazuh setup complete!"
-echo "➡️ Log in as 'wazuh' or run: su - wazuh"
+
