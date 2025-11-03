@@ -56,7 +56,7 @@ set -e
 
 # Clone Wazuh repo
 echo "📥 Cloning Wazuh Docker repo..."
-git clone https://github.com/wazuh/wazuh-docker.git -b v4.12.0
+git clone https://github.com/wazuh/wazuh-docker.git -b v4.14.0
 EOF
 
 echo "✅ Wazuh setup complete!"
